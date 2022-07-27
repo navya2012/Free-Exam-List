@@ -1,0 +1,42 @@
+.head-ht{
+   text-align: center;
+  }
+  h1{
+    color: firebrick;
+  }
+  .second{
+    position: relative; top: 200px; text-align: center;
+  }
+  .third{
+    position: relative; top: 800px; text-align: center;
+  }
+  /* limited upsc */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(3,150);
+    gap: 40px;
+    position: relative; top: -80px;
+  }
+  .grid-borders{
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 10px ;
+    margin-left: -10px;
+  }
+  
+  /* old question papers */
+  .grid-border{
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 15px ;
+    margin-left: 80px;
+  }
+  .grid-container{
+    display:grid;
+    grid-template-rows:140px;
+    grid-template-columns:repeat(3, 28%);
+    gap:30px;
+    position: relative; top: -80px;
+  }
+  

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import './App.css';
+import {ExamList} from './Components/Redux/Containers/ExamList';
+import {Login} from './Components/Redux/Containers/Login';
+import {Navbar} from './Components/Navbar';
+import {QuestionsList} from './Components/Redux/Containers/QuestionsList';
+import {Registration} from './Components/Redux/Containers/Registration';
+import {Verification} from './Components/Redux/Containers/Verification'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}/>
+          <Route path="/regis" element={<Registration />}/>     
+          <Route path="/verify" element={<Verification />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path='/examlist' element={<ExamList />}/>
+          <Route path='/queslist' element={<QuestionsList />}/>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
 export default App;

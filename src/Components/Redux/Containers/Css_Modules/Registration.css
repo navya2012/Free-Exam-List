@@ -1,0 +1,15 @@
+.form-position {
+    text-align: center;
+    position: relative;
+    top: 100px;
+  }
+  
+  .form-group {
+    max-width: 400px;
+    margin: auto;
+  }
+  label{
+   position: relative;
+   right: 140px;
+  }
+  
